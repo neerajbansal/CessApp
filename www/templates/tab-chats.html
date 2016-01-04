@@ -1,0 +1,13 @@
+<ion-view view-title="Posts">
+    <ion-content>
+        <ion-list>
+            <div class="item list-item">
+                <ion-item class="" ng-repeat="post in posts" type="item-text-wrap" href="#/tab/chats/{{post.id}}">
+                    <font color="cyan"><h2><b>{{post.title}}</b></h2></font> 
+                    <small>By:&nbsp;</small>{{post.name}}&nbsp;&nbsp;
+                    <small>On:&nbsp;</small>{{post.created_at}}&nbsp;&nbsp;               
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

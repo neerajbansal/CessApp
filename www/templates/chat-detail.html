@@ -1,0 +1,29 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Notification">
+    <ion-content class="padding">
+        <div class="list card">
+           <div class="padding text-center"><h3>{{post.title}}</h3></div> 
+            <div class="item item-divider">
+                <small>By:&nbsp;{{post.name}}</small><br />
+                <small>For:&nbsp;{{post.class}}</small><br />
+                <small>On:&nbsp;{{post.created_at}}</small>
+            </div>
+            <div class="item item-body">
+                <div>
+                    {{post.content}}
+                </div>
+            </div>
+            <div class="item item-body">
+                <div>
+                   <small>{{post.name}} is {{post.post}} in our Department, you may contact them through their mail
+                    <u>{{post.email}}</u></small>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
